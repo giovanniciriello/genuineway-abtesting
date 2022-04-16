@@ -1,0 +1,14 @@
+@import "../../variables";
+
+.landing-container {
+  background-color: $slate;
+  background-image: url(../../assets/img/landing-waves.svg);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.sneaker-container {
+  background-image: url(../../assets/img/sneaker.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

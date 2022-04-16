@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFireRemoteConfig } from '@angular/fire/compat/remote-config';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'genuine';
+
+  constructor(remoteConfig: AngularFireRemoteConfig) {
+    remoteConfig.booleans['test'].subscribe(test => {
+      console.log(test)
+    });
+  }
 }

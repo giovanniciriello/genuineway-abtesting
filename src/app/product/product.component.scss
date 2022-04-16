@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.product-container {
+  background-color: $slate;
+  background-image: url(../../assets/img/product-wave.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.indicator {
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
