@@ -11,6 +11,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProductComponent } from './product/product.component';
+import { FeaturesComponent } from './product/features/features.component';
+import { FeatureComponent } from './product/features/feature/feature.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ProductComponent } from './product/product.component';
     AppComponent,
     NavbarComponent,
     LandingComponent,
-    ProductComponent
+    ProductComponent,
+    FeaturesComponent,
+    FeatureComponent
   ],
   imports: [
     BrowserModule,

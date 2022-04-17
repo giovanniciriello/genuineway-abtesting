@@ -1,0 +1,46 @@
+<div class="mt-5 d-flex flex-column align-items-center justify-content-between h-100">
+  <h3 class="bold">Choose the change</h3>
+  <div class="divider"></div>
+
+  <p class="bold mt-5 text-center">
+    This shoe was made entirely from<br>
+    <span class="text-success">environmentally sustainable materials</span>,<br>
+    and every step in the supply chain is<br>
+    tracked and certified on blockchain.
+  </p>
+  <div class="my-5 d-flex flex-column align-items-center justify-content-center p-4 position-relative" style="width:800px; max-width: 100%;">
+    <img src="assets/img/sneaker.png" style="width:800px; max-width: 100%;">
+    <img *ngFor="let feature of features" src="assets/img/indicator.svg" class="indicator" [ngStyle]="feature.position" (click)="openFeatureModal(featureModal, feature.key)">
+  </div>
+</div>
+
+<div class="mb-5">
+  <p class="text-white text-center bold">
+    Click on circle indicators to enjoy the<br>sustainability story of the shoe
+  </p>
+</div>
+
+<div class="container">
+
+  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+    <ngb-panel *ngFor="let feature of features" [id]="feature.key">
+      <ng-template ngbPanelTitle>
+        <div class="d-flex flex-column">
+          <h1 class="bold">{{ feature.title }}</h1>
+          <div class="divider"></div>
+        </div>
+
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <app-feature [feature]="selectedFeature" [withTitle]="false"></app-feature>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+
+</div>
+
+<ng-template #featureModal let-modal>
+  <div class="modal-body">
+    <app-feature [feature]="selectedFeature"></app-feature>
+  </div>
+</ng-template>

@@ -2,16 +2,10 @@
 
 .product-container {
   background-color: $slate;
-  background-image: url(../../assets/img/product-wave.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
 
-.indicator {
-  position: absolute;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.3);
+  &.with-bottom-wave {
+    background-image: url(../../assets/img/product-wave.svg);
+    background-position: bottom;
+    background-repeat: repeat-x;
   }
 }

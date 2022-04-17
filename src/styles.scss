@@ -29,3 +29,29 @@
   height: 5px;
   background: $green;
 }
+
+.modal-content {
+  border-radius: 20px;
+  border-color: white;
+}
+
+.accordion-button.collapsed {
+  background-color: $slate;
+}
+
+.accordion-item {
+  border-radius: 20px;
+}
+
+.accordion-button {
+  border-radius: 20px 20px 0 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $green;
+  background-color: white;
+  border-bottom: none;
+  &::after {
+    color: $green;
+  }
+}
