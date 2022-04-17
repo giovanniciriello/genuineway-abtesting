@@ -6,3 +6,14 @@
     transform: scale(1.3);
   }
 }
+
+.with-circle-bg {
+  background-image: url(../../../assets/img/circle.svg);
+  background-repeat: no-repeat;
+  background-position: -20%;
+
+  @media screen and (min-width: 768px) {
+    background-position: left;
+    background-size: 50%;
+  }
+}

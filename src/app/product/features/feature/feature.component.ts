@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AbtestingService } from 'src/app/services/abtesting.service';
 
 @Component({
   selector: 'app-feature',
@@ -9,7 +10,9 @@ export class FeatureComponent implements OnInit {
 
   @Input() feature: any;
   @Input() withTitle = true;
-  constructor() { }
+  constructor(
+    public ab: AbtestingService
+  ) { }
 
   ngOnInit(): void {
   }

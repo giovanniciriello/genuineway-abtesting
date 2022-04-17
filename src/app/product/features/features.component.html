@@ -8,7 +8,7 @@
     and every step in the supply chain is<br>
     tracked and certified on blockchain.
   </p>
-  <div class="my-5 d-flex flex-column align-items-center justify-content-center p-4 position-relative" style="width:800px; max-width: 100%;">
+  <div class="my-5 d-flex flex-column align-items-center justify-content-center p-4 position-relative" style="width:900px; max-width: 100%;" [ngClass]="{'with-circle-bg': ab.el.productPageLayout}">
     <img src="assets/img/sneaker.png" style="width:800px; max-width: 100%;">
     <img
          *ngFor="let feature of features"
@@ -47,6 +47,7 @@
 
 <ng-template #featureModal let-modal>
   <div class="modal-body">
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')" style="position: absolute; right: 20px; top: 20px"></button>
     <app-feature [feature]="selectedFeature"></app-feature>
   </div>
 </ng-template>

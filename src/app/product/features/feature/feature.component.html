@@ -3,7 +3,10 @@
   <div class="divider"></div>
 </div>
 
-<!-- image here -->
+<div *ngIf="ab.el.productFeaturesStyle" class="px-4 mt-4">
+  <img [src]="feature.imgUrl" class="img-fluid feature-photo" alt="">
+</div>
+
 
 <div class="text-center mt-4 mx-3">
   <p class="bold">
