@@ -1,0 +1,10 @@
+@import "../../../variables";
+
+.feedback-container {
+  width: 500px;
+  max-width: 95%;
+  border-radius: 20px;
+  border-color: $green;
+  border-width: 3px;
+  border-style: solid;
+}

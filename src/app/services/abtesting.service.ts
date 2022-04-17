@@ -11,7 +11,7 @@ export class AbtestingService {
 
   public el = {
     firstImpactCopy: false,
-    productPageLayout: true,
+    productPageLayout: false,
     productFeaturesStyle: true,
     emailInputCopy: true,
     feedbackRequestStyle: true,

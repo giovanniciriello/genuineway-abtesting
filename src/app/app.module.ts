@@ -13,6 +13,8 @@ import { LandingComponent } from './landing/landing.component';
 import { ProductComponent } from './product/product.component';
 import { FeaturesComponent } from './product/features/features.component';
 import { FeatureComponent } from './product/features/feature/feature.component';
+import { EmailInputComponent } from './product/email-input/email-input.component';
+import { FeedbackComponent } from './product/feedback/feedback.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { FeatureComponent } from './product/features/feature/feature.component';
     LandingComponent,
     ProductComponent,
     FeaturesComponent,
-    FeatureComponent
+    FeatureComponent,
+    EmailInputComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
