@@ -10,17 +10,23 @@
   </p>
   <div class="my-5 d-flex flex-column align-items-center justify-content-center p-4 position-relative" style="width:800px; max-width: 100%;">
     <img src="assets/img/sneaker.png" style="width:800px; max-width: 100%;">
-    <img *ngFor="let feature of features" src="assets/img/indicator.svg" class="indicator" [ngStyle]="feature.position" (click)="openFeatureModal(featureModal, feature.key)">
+    <img
+         *ngFor="let feature of features"
+         src="assets/img/indicator.svg"
+         class="indicator"
+         [ngClass]="{'d-none': ab.el.productPageLayout}"
+         [ngStyle]="feature.position"
+         (click)="openFeatureModal(featureModal, feature.key)">
   </div>
 </div>
 
-<div class="mb-5">
+<div *ngIf="!ab.el.productPageLayout" class="mb-5">
   <p class="text-white text-center bold">
     Click on circle indicators to enjoy the<br>sustainability story of the shoe
   </p>
 </div>
 
-<div class="container">
+<div *ngIf="ab.el.productPageLayout" class="container">
 
   <ngb-accordion [closeOthers]="true" activeIds="static-1">
     <ngb-panel *ngFor="let feature of features" [id]="feature.key">

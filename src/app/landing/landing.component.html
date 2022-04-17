@@ -8,11 +8,20 @@
         Welcome to the<br>Womsh Blockchain System
       </h3>
 
-      <h5 class="bold">
+      <h5 *ngIf="ab.el.firstImpactCopy" class="bold mt-4">
         Choose change. <br>
         Choose beauty. <br>
         Choose Womsh.
       </h5>
+
+      <h5 *ngIf="!ab.el.firstImpactCopy" class="bold mt-4 mx-auto" style="max-width: 600px;">
+        This shoe was made entirely from
+        <span class="text-success">environmentally sustainable materials</span>,
+        and every step in the supply chain is
+        tracked and certified on blockchain
+      </h5>
+
+
     </div>
 
     <div class="text-center d-flex flex-column align-items-center">

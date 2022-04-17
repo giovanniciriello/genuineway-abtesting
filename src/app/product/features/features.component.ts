@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AbtestingService } from 'src/app/services/abtesting.service';
 
 @Component({
   selector: 'app-features',
@@ -77,7 +78,8 @@ export class FeaturesComponent implements OnInit {
   public selectedFeature = this.features[0]
 
   constructor(
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    public ab: AbtestingService
   ) { }
 
   ngOnInit(): void {
