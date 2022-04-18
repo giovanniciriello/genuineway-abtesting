@@ -12,7 +12,7 @@ export class AbtestingService {
   public el = {
     firstImpactCopy: false,
     productPageLayout: false,
-    productFeaturesStyle: true,
+    productFeaturesStyle: false,
     emailInputCopy: false,
     feedbackRequestStyle: true,
   }

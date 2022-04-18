@@ -7,6 +7,10 @@
   <img [src]="feature.imgUrl" class="img-fluid feature-photo" alt="" style="width: 250px;">
 </div>
 
+<div *ngIf="!ab.el.productFeaturesStyle" class="px-4 mt-4 text-center">
+  <img [src]="'/assets/img/icons/'+feature.key+'.png'" class="img-fluid " alt="" style="width: 150px; height: 150px;">
+</div>
+
 
 <div class="text-center mt-4 mx-3">
   <p class="bold">

@@ -21,7 +21,7 @@ export class FeaturesComponent implements OnInit {
         { name: "DMD SOLOFRA", link: "https://genuineway.io/wp-content/uploads/2021/02/DMD-SOLOFRA.pdf" }
       ],
       position: {
-        bottom: '25%', right: '5%'
+        bottom: '35%', right: '15%'
       }
     },
     {
