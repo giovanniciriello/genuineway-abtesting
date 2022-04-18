@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbtestingService } from 'src/app/services/abtesting.service';
 
 @Component({
   selector: 'app-feedback',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedbackComponent implements OnInit {
 
-  constructor() { }
+  public feedbackSent = false;
+
+  constructor(
+    public ab: AbtestingService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  sendFeedback() {
+    this.feedbackSent = true;
   }
 
 }

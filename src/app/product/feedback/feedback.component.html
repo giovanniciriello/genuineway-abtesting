@@ -1,18 +1,38 @@
 <div class="feedback-container text-center mx-auto p-4 my-5">
-  <h4 class="bold">
-    What are you about this experience?
-  </h4>
+  <div *ngIf="!feedbackSent">
 
-  <div class="d-grid gap-3 mt-4">
-    <button class="btn btn-block btn-outline-success py-2" style="background-color: rgba(67, 160, 71, 0.17);;">
-      <h6 class="bold mb-0">Very interesting</h6>
-    </button>
-    <button class="btn btn-block btn-outline-success py-2" style="background-color: rgba(67, 160, 71, 0.17);;">
-      <h6 class="bold mb-0">Interesting but not understood</h6>
-    </button>
-    <button class="btn btn-block btn-outline-success py-2" style="background-color: rgba(67, 160, 71, 0.17);;">
-      <h6 class="bold mb-0">Not very interesting</h6>
-    </button>
+    <h4 class="bold">
+      What are you about this experience?
+    </h4>
+
+    <div *ngIf="ab.el.feedbackRequestStyle" class="d-grid gap-3 mt-4">
+      <button class="btn btn-block btn-outline-success py-2" style="background-color: rgba(67, 160, 71, 0.17);" (click)="sendFeedback()">
+        <h6 class="bold mb-0">Very interesting</h6>
+      </button>
+      <button class="btn btn-block btn-outline-success py-2" style="background-color: rgba(67, 160, 71, 0.17);" (click)="sendFeedback()">
+        <h6 class="bold mb-0">Interesting but not understood</h6>
+      </button>
+      <button class="btn btn-block btn-outline-success py-2" style="background-color: rgba(67, 160, 71, 0.17);" (click)="sendFeedback()">
+        <h6 class="bold mb-0">Not very interesting</h6>
+      </button>
+    </div>
+
+    <div *ngIf="!ab.el.feedbackRequestStyle" style="height: 80px;" class="d-flex justify-content-center align-items-end">
+      <span class="emoji-fb" (click)="sendFeedback()">😣</span>
+      <span class="emoji-fb" (click)="sendFeedback()">😕</span>
+      <span class="emoji-fb" (click)="sendFeedback()">😐</span>
+      <span class="emoji-fb" (click)="sendFeedback()">😀</span>
+      <span class="emoji-fb" (click)="sendFeedback()">😍</span>
+    </div>
   </div>
+
+  <div *ngIf="feedbackSent">
+
+    <h2>🙏🏻</h2>
+    <h5 class="bold text-muted">Thanks for your feedback!</h5>
+
+  </div>
+
+
 
 </div>

@@ -13,7 +13,7 @@ export class AbtestingService {
     firstImpactCopy: false,
     productPageLayout: false,
     productFeaturesStyle: true,
-    emailInputCopy: true,
+    emailInputCopy: false,
     feedbackRequestStyle: true,
   }
 
