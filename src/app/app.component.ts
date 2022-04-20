@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'genuine';
 
   constructor(remoteConfig: AngularFireRemoteConfig) {
-    remoteConfig.booleans['test'].subscribe(test => {
-      console.log(test)
-    });
+    /*     remoteConfig.booleans['test'].subscribe(test => {
+          console.log(test)
+        }); */
   }
 }
