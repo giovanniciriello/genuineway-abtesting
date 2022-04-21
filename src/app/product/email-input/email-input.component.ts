@@ -8,6 +8,8 @@ import { AbtestingService } from 'src/app/services/abtesting.service';
 })
 export class EmailInputComponent implements OnInit {
 
+  public submitted = false;
+
   constructor(
     public ab: AbtestingService
   ) { }
@@ -15,4 +17,7 @@ export class EmailInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submitEmail() {
+    this.submitted = true
+  }
 }
