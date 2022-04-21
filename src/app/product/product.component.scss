@@ -3,9 +3,11 @@
 .product-container {
   background-color: $slate;
 
-  &.with-bottom-wave {
-    background-image: url(../../assets/img/product-wave.svg);
-    background-position: bottom;
-    background-repeat: repeat-x;
+  @media screen and (max-width: 500px) {
+    &.with-bottom-wave {
+      background-image: url(../../assets/img/product-wave.svg);
+      background-position: bottom;
+      background-repeat: repeat-x;
+    }
   }
 }

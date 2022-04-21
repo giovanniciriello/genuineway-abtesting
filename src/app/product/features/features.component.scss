@@ -17,3 +17,9 @@
     background-size: 50%;
   }
 }
+
+.indications-text {
+  @media screen and (min-width: 500px) {
+    color: rgb(67, 160, 71) !important;
+  }
+}
