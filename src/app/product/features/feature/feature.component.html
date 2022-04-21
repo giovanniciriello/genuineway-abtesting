@@ -4,7 +4,7 @@
 </div>
 
 <div *ngIf="ab.el.productFeaturesStyle" class="px-4 mt-4 text-center">
-  <img [src]="feature.imgUrl" class="img-fluid feature-photo" alt="" style="width: 250px;">
+  <img [src]="'/assets/img/photos/'+feature.key+'.jpeg'" class="img-fluid feature-photo" alt="" style="width: 250px;">
 </div>
 
 <div *ngIf="!ab.el.productFeaturesStyle" class="px-4 mt-4 text-center">

@@ -24,11 +24,11 @@ export class AbtestingService {
     this.el.emailInputCopy = this.getRandomBoolean()
     this.el.feedbackRequestStyle = this.getRandomBoolean()
 
-    // this.el.firstImpactCop =: true,
-    // this.el.productPageLayout = false,
-    // this.el.productFeaturesStyl =: true,
-    // this.el.emailInputCopy = false,
-    // this.el.feedbackRequestStyle = false,
+    // this.el.firstImpactCop = true
+    // this.el.productPageLayout = true
+    // this.el.productFeaturesStyle = true
+    // this.el.emailInputCopy = false
+    // this.el.feedbackRequestStyle = false
   }
 
   private getRandomBoolean() {

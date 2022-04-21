@@ -40,9 +40,9 @@
 
 </div>
 
-<div *ngIf="ab.el.productPageLayout" class="container">
+<div *ngIf="ab.el.productPageLayout" class="container pb-5">
 
-  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+  <ngb-accordion [closeOthers]="true">
     <ngb-panel *ngFor="let feature of features" [id]="feature.key">
       <ng-template ngbPanelTitle>
         <div class="d-flex flex-column">
@@ -52,7 +52,7 @@
 
       </ng-template>
       <ng-template ngbPanelContent>
-        <app-feature [feature]="selectedFeature" [withTitle]="false"></app-feature>
+        <app-feature [feature]="feature" [withTitle]="false"></app-feature>
       </ng-template>
     </ngb-panel>
   </ngb-accordion>
