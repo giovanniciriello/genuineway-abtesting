@@ -1,6 +1,8 @@
-# Genuine
+# Genuine Way 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+Postgraduate project in ICT Engineering, Business and Innovation at Politecnico di Milano in Leadership & Innovation. The project includes an angular application that, through the ab testing technique aims to collect user data and choose which interface performs best.
+
+In the public code there is no part of how the data is collected and the project is intended purely for academic purposes.
 
 ## Development server
 
